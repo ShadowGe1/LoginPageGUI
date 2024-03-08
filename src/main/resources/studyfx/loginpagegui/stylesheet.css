@@ -1,6 +1,17 @@
 .parent{
     -fx-background-color: white;
 }
-.sidebar{
-    -fx-background-color: #0fe88d;
+.buttonsyle{
+    -fx-background-color: rgb(216, 133, 163);
+    -fx-text-fill: white;
+    -fx-background-radius: 30 30 30 30;
+}
+.textstyle{
+    -fx-font-family: "Microsoft Tai Le";
+}
+.textField{
+    -fx-background-color: rgb(192, 219, 234);
+}
+.textFieldStyle{
+    //-fx-font-family: ;
 }

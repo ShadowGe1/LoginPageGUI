@@ -117,7 +117,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>studyfx.loginpagegui/studyfx.loginpagegui.HelloApplication</mainClass>
+                            <mainClass>studyfx.loginpagegui/studyfx.loginpagegui.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
