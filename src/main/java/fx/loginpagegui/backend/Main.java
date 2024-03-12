@@ -1,4 +1,4 @@
-package studyfx.loginpagegui.backend;
+package fx.loginpagegui.backend;
 
 import java.util.Arrays;
 import java.util.Scanner;

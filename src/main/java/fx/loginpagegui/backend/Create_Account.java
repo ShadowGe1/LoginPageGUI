@@ -1,4 +1,4 @@
-package studyfx.loginpagegui.backend;
+package fx.loginpagegui.backend;
 
 import java.io.Serial;
 import java.io.Serializable;

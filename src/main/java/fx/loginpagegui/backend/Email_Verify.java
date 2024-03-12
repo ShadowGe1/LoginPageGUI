@@ -1,4 +1,4 @@
-package studyfx.loginpagegui.backend;
+package fx.loginpagegui.backend;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

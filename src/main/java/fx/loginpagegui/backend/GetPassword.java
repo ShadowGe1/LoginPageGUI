@@ -1,4 +1,4 @@
-package studyfx.loginpagegui.backend;
+package fx.loginpagegui.backend;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

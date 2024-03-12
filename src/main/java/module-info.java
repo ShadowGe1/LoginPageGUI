@@ -10,6 +10,6 @@ module studyfx.loginpagegui {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens studyfx.loginpagegui to javafx.fxml;
-    exports studyfx.loginpagegui;
+    opens fx.loginpagegui to javafx.fxml;
+    exports fx.loginpagegui;
 }

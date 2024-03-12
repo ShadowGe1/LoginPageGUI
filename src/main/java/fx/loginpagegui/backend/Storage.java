@@ -1,4 +1,4 @@
-package studyfx.loginpagegui.backend;
+package fx.loginpagegui.backend;
 
 import java.io.*;
 import java.util.Scanner;
@@ -93,7 +93,28 @@ public class Storage {
         if(sign_in.correctPassword(username, password)){
             return "Wrong password.";
         }
+        this.username = username;
         return "Hello";
+    }
+
+    public String getName(){
+        return AccountInfo.get(username).getName();
+    }
+
+    public String getSurname(){
+        return AccountInfo.get(username).getSurname();
+    }
+
+    public String getBirthday(){
+        return AccountInfo.get(username).getBirthDay();
+    }
+
+    public String getGender(){
+        return AccountInfo.get(username).getGender();
+    }
+
+    public String getEmail(){
+        return AccountInfo.get(username).getEmail();
     }
 
     public void saveInfo() {
@@ -112,7 +133,7 @@ public class Storage {
     public void loadInfo() throws ClassNotFoundException {
         try {
             ObjectInputStream in = new ObjectInputStream(
-                    new FileInputStream("InfoAccounts.ser")
+                    new FileInputStream("src/InfoAccounts.ser")
             );
             AccountInfo = (TreeMap<String, Create_Account>) in.readObject();
             in.close();

@@ -15,3 +15,7 @@
 .textFieldStyle{
     -fx-font-family: "Comic Sans MS";
 }
+.helloMesage{
+    -fx-font-family: "Microsoft Tai Le";
+    -fx-alignment: CENTER;
+}
