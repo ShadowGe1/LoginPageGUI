@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import studyfx.loginpagegui.backend.Storage;
 
 public class FXMLController {
 
@@ -20,7 +21,9 @@ public class FXMLController {
     private Label atention;
     String username, password;
 
-    public void login(ActionEvent e){
+    public void login(ActionEvent e) throws ClassNotFoundException {
+        Storage storage = new Storage();
+
         if(Username.getText().isEmpty()){
             atention.setText("Enter the username pls!!!");
             return;
@@ -30,6 +33,7 @@ public class FXMLController {
             return;
         }
         atention.setText("");
+        atention.setText(storage.verifyUserGUI(Username.getText(), Password.getText(), storage));
         username = Username.getText();
         password = Password.getText();
         System.out.println(username);

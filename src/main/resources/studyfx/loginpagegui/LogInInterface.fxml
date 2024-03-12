@@ -39,7 +39,10 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Label fx:id="atention" alignment="CENTER" layoutX="226.0" layoutY="208.0" prefHeight="17.0" prefWidth="149.0" />
+      <Label fx:id="atention" alignment="CENTER" layoutX="104.0" layoutY="204.0" prefHeight="17.0" prefWidth="149.0" textFill="#da1414">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Label>
       <ImageView fitHeight="467.0" fitWidth="514.0" layoutX="255.0" layoutY="147.0" pickOnBounds="true" smooth="false">
          <Image url="@../../Character-working-laptop-sitting-chair.png" />
       </ImageView>
