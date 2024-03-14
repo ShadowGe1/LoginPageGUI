@@ -32,10 +32,15 @@
             <Font size="13.0" />
          </font>
       </Text>
-      <Button fx:id="LoginButton" layoutX="129.0" layoutY="349.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="98.0" styleClass="buttonsyle" text="LOGIN       " textFill="#347dae">
+      <Button fx:id="LoginButton" contentDisplay="RIGHT" layoutX="129.0" layoutY="349.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="98.0" styleClass="buttonsyle" text="LOGIN " textFill="#347dae">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
+         <graphic>
+            <ImageView preserveRatio="true">
+               <Image url="@../../Vector.png" />
+            </ImageView>
+         </graphic>
       </Button>
       <Label fx:id="atention" alignment="CENTER" layoutX="70.0" layoutY="204.0" prefHeight="18.0" prefWidth="216.0" styleClass="textFieldStyle" textFill="#da1414">
          <font>
@@ -44,11 +49,6 @@
       <ImageView fitHeight="467.0" fitWidth="514.0" layoutX="255.0" layoutY="147.0" pickOnBounds="true" smooth="false">
          <Image url="@../../Character-working-laptop-sitting-chair.png" />
       </ImageView>
-      <ImageView fitHeight="7.0" fitWidth="18.0" layoutX="195.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../Vector.png" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="86.0" fitWidth="250.0" layoutX="96.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../aesthetic-high-resolution-logo-transparent.png" />
@@ -56,6 +56,13 @@
       </ImageView>
       <TextField fx:id="Username" layoutX="53.0" layoutY="248.0" prefHeight="25.0" prefWidth="250.0" styleClass="textField" />
       <PasswordField fx:id="Password" layoutX="53.0" layoutY="305.0" prefHeight="25.0" prefWidth="250.0" styleClass="textField" />
+      <Button fx:id="graphical" layoutX="169.0" layoutY="457.0" mnemonicParsing="false" text="Button">
+         <graphic>
+            <ImageView>
+               <Image url="@../../Vector.png" />
+            </ImageView>
+         </graphic>
+      </Button>
    </AnchorPane>
    <ImageView fx:id="exit" fitHeight="36.0" fitWidth="34.0" layoutX="766.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
       <image>

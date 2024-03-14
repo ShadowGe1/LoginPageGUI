@@ -20,6 +20,8 @@ public class FXMLController {
     @FXML
     private Button LoginButton;
     @FXML
+    private Button graphical;
+    @FXML
     private TextField Username;
     @FXML
     private TextField Password;
