@@ -1,8 +1,8 @@
 package fx.loginpagegui;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 
 public class InfoController {
     @FXML
@@ -18,7 +18,7 @@ public class InfoController {
     @FXML
     private Label email;
     @FXML
-    private ImageView exit;
+    private Button exit;
 
     public void displayInfo(String username, String name, String surname, String birthday, String gender, String email){
         hello.setText("Hello, " + username);

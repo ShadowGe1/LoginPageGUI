@@ -10,7 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import fx.loginpagegui.backend.Storage;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -20,15 +19,15 @@ public class FXMLController {
     @FXML
     private Button LoginButton;
     @FXML
-    private Button graphical;
+    private Button exit;
+    @FXML
+    private Button singUp;
     @FXML
     private TextField Username;
     @FXML
     private TextField Password;
     @FXML
     private Label atention;
-    @FXML
-    private ImageView exit;
     private Stage stage;
     private Parent root;
     Storage storage = new Storage();
@@ -60,6 +59,16 @@ public class FXMLController {
 
         InfoController infoController = fxmlLoader.getController();
         infoController.displayInfo(Username.getText(), storage.getName(), storage.getSurname(), storage.getBirthday(), storage.getGender(), storage.getEmail());
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void singUp(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SingUpInterface.fxml"));
+        root = fxmlLoader.load();
+
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);

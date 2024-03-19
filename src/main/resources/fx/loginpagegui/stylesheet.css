@@ -1,5 +1,5 @@
 .parent{
-    -fx-background-color: white;
+    -fx-background-color: linear-gradient(to left, rgba(0, 131, 176, 0.8), rgba(219, 0, 158, 0.77));
 }
 .buttonsyle{
     -fx-background-color: rgb(216, 133, 163);
@@ -18,5 +18,8 @@
 .helloMesage{
     -fx-font-family: "Microsoft Tai Le";
     -fx-alignment: CENTER;
+}
+.buttonbar{
+    -fx-background-color: rgb(192, 219, 234);
 }
 

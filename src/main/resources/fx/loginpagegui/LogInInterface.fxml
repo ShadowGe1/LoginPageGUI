@@ -7,16 +7,21 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.loginpagegui.FXMLController">
-   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c0dbea" height="600.0" layoutX="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
-   <ImageView fitHeight="356.0" fitWidth="146.0" layoutX="640.0" layoutY="230.0" pickOnBounds="true" smooth="false">
-      <Image url="@../../cactus.png" />
-   </ImageView>
-   <AnchorPane prefHeight="600.0" prefWidth="514.0">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.loginpagegui.FXMLController">
+   <AnchorPane layoutX="32.0" layoutY="20.0" prefHeight="610.0" prefWidth="786.0">
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="600.0" layoutX="-2.0" layoutY="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="786.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c0dbea" height="600.0" layoutX="386.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+      <ImageView fitHeight="356.0" fitWidth="146.0" layoutX="626.0" layoutY="215.0" pickOnBounds="true" smooth="false">
+         <Image url="@../../cactus.png" />
+      </ImageView>
+      <ImageView fitHeight="467.0" fitWidth="487.0" layoutX="274.0" layoutY="143.0" pickOnBounds="true" smooth="false">
+         <Image url="@../../Character-working-laptop-sitting-chair.png" />
+      </ImageView>
       <Text layoutX="60.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textstyle" text="Log In" wrappingWidth="134.63427734375">
          <font>
             <Font name="System Bold" size="45.0" />
@@ -46,9 +51,6 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <ImageView fitHeight="467.0" fitWidth="514.0" layoutX="255.0" layoutY="147.0" pickOnBounds="true" smooth="false">
-         <Image url="@../../Character-working-laptop-sitting-chair.png" />
-      </ImageView>
       <ImageView fitHeight="86.0" fitWidth="250.0" layoutX="96.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../aesthetic-high-resolution-logo-transparent.png" />
@@ -56,17 +58,19 @@
       </ImageView>
       <TextField fx:id="Username" layoutX="53.0" layoutY="248.0" prefHeight="25.0" prefWidth="250.0" styleClass="textField" />
       <PasswordField fx:id="Password" layoutX="53.0" layoutY="305.0" prefHeight="25.0" prefWidth="250.0" styleClass="textField" />
-      <Button fx:id="graphical" layoutX="169.0" layoutY="457.0" mnemonicParsing="false" text="Button">
-         <graphic>
-            <ImageView>
-               <Image url="@../../Vector.png" />
-            </ImageView>
-         </graphic>
-      </Button>
+      <VBox alignment="TOP_RIGHT" layoutX="556.0" layoutY="14.0" prefHeight="28.0" prefWidth="216.0">
+         <children>
+            <Button fx:id="exit" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#exit" styleClass="buttonbar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="singUp" layoutX="152.0" layoutY="434.0" mnemonicParsing="false" onAction="#singUp" text="Sing Up" />
    </AnchorPane>
-   <ImageView fx:id="exit" fitHeight="36.0" fitWidth="34.0" layoutX="766.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../close-button.png" />
-      </image>
-   </ImageView>
 </AnchorPane>
