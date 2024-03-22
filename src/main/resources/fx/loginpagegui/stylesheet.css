@@ -11,6 +11,9 @@
 }
 .textField{
     -fx-background-color: rgb(192, 219, 234);
+    -fx-background-radius: 4 4 4 4;
+    -fx-border-width: 2;
+    -fx-border-radius: 4 4 4 4;
 }
 .textFieldStyle{
     -fx-font-family: "Comic Sans MS";
@@ -18,6 +21,10 @@
 .helloMesage{
     -fx-font-family: "Microsoft Tai Le";
     -fx-alignment: CENTER;
+}
+.buttonexit{
+    -fx-background-color: rgb(192, 219, 234);
+    -fx-background-radius: 30 30 30 30;
 }
 .buttonbar{
     -fx-background-color: rgb(192, 219, 234);

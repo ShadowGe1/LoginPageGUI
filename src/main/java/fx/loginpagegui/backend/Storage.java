@@ -97,6 +97,10 @@ public class Storage {
         return "Hello";
     }
 
+    public boolean verifyUsername(String username){
+        return AccountInfo.containsKey(username);
+    }
+
     public String getName(){
         return AccountInfo.get(username).getName();
     }
@@ -133,7 +137,7 @@ public class Storage {
     public void loadInfo() throws ClassNotFoundException {
         try {
             ObjectInputStream in = new ObjectInputStream(
-                    new FileInputStream("src/InfoAccounts.ser")
+                    new FileInputStream("InfoAccounts.ser")
             );
             AccountInfo = (TreeMap<String, Create_Account>) in.readObject();
             in.close();
