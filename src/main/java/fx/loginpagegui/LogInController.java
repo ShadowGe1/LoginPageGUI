@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class FXMLController {
+public class LogInController {
 
     @FXML
     private Button LoginButton;
@@ -32,7 +32,7 @@ public class FXMLController {
     private Parent root;
     Storage storage = new Storage();
 
-    public FXMLController() throws ClassNotFoundException {
+    public LogInController() throws ClassNotFoundException {
     }
 
     public void login(ActionEvent e) throws IOException {
@@ -47,7 +47,7 @@ public class FXMLController {
         atention.setText("");
         String s = storage.verifyUserGUI(Username.getText(), Password.getText(), storage);
         atention.setText(s);
-        if(s.equals("Hello")){
+        if(s.isEmpty()){
             displayInfo(e);
         }
 
