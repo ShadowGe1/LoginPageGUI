@@ -5,7 +5,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -26,84 +25,84 @@
                   <Image url="@../../Character-working-laptop-sitting-chair.png" />
                </image>
             </ImageView>
-            <Label fx:id="atention" alignment="CENTER" layoutX="70.0" layoutY="204.0" prefHeight="18.0" prefWidth="216.0" styleClass="textFieldStyle" textFill="#da1414">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
             <ImageView fitHeight="86.0" fitWidth="250.0" layoutX="96.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../aesthetic-high-resolution-logo-transparent.png" />
                </image>
             </ImageView>
-            <VBox alignment="TOP_RIGHT" layoutX="556.0" layoutY="14.0" prefHeight="28.0" prefWidth="216.0">
-               <children>
-                  <Button fx:id="exit" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#exit" styleClass="buttonbar">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../close.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-               </children>
-            </VBox>
+            <Button fx:id="exit" contentDisplay="RIGHT" layoutX="736.0" layoutY="20.0" mnemonicParsing="false" onAction="#exit" styleClass="buttonbar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
             <Label fx:id="hello" layoutX="13.0" layoutY="143.0" prefHeight="64.0" prefWidth="363.0" styleClass="helloMesage">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Text layoutX="22.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Name:" wrappingWidth="80.439453125">
+            <Text layoutX="22.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Name:" wrappingWidth="80.439453125">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text layoutX="22.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Surname:" wrappingWidth="65.5830078125">
+            <Text layoutX="22.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Surname:" wrappingWidth="65.5830078125">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text layoutX="22.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Birthday" wrappingWidth="65.5830078125">
+            <Text layoutX="22.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Birthday" wrappingWidth="65.5830078125">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text layoutX="22.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Gender:" wrappingWidth="65.5830078125">
+            <Text layoutX="22.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Gender:" wrappingWidth="65.5830078125">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text layoutX="22.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Email:" wrappingWidth="65.5830078125">
+            <Text layoutX="22.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFieldStyle" text="Email:" wrappingWidth="65.5830078125">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Label fx:id="name" layoutX="102.0" layoutY="212.0" prefHeight="22.0" prefWidth="197.0" styleClass="textFieldStyle">
+            <Label fx:id="name" layoutX="102.0" layoutY="213.0" prefHeight="22.0" prefWidth="245.0" styleClass="textFieldStyle">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="surname" layoutX="102.0" layoutY="241.0" prefHeight="22.0" prefWidth="197.0" styleClass="textFieldStyle">
+            <Label fx:id="surname" layoutX="102.0" layoutY="243.0" prefHeight="22.0" prefWidth="245.0" styleClass="textFieldStyle">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="birthday" layoutX="102.0" layoutY="270.0" prefHeight="22.0" prefWidth="197.0" styleClass="textFieldStyle">
+            <Label fx:id="birthday" layoutX="102.0" layoutY="273.0" prefHeight="22.0" prefWidth="245.0" styleClass="textFieldStyle">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="gender" layoutX="102.0" layoutY="303.0" prefHeight="22.0" prefWidth="197.0" styleClass="textFieldStyle">
+            <Label fx:id="gender" layoutX="102.0" layoutY="303.0" prefHeight="22.0" prefWidth="245.0" styleClass="textFieldStyle">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="email" layoutX="102.0" layoutY="331.0" prefHeight="22.0" prefWidth="197.0" styleClass="textFieldStyle">
+            <Label fx:id="email" layoutX="102.0" layoutY="333.0" prefHeight="22.0" prefWidth="245.0" styleClass="textFieldStyle">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
+            <Button fx:id="back" layoutX="700.0" layoutY="20.0" mnemonicParsing="false" onAction="#backToLogIn" prefHeight="22.0" prefWidth="36.0" styleClass="buttonbar">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </AnchorPane>
    </children>

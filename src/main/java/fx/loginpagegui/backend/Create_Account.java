@@ -15,11 +15,11 @@ public class Create_Account implements Serializable {
     private String password;
     private byte[] salt;
     private final transient Scanner sc = new Scanner(System.in);
-    Create_Account(String password){
+    public Create_Account(String password){
         setPassword(password);
     }
 
-    Create_Account(){
+    public Create_Account(){
     }
 
     public void setName(String name){
@@ -38,6 +38,7 @@ public class Create_Account implements Serializable {
         this.surname = surname;
     }
     public void setBirthDay(String BirthDay){
+        BirthDay = BirthDay.substring(0,4) + BirthDay.substring(5,7) + BirthDay.substring(8);
         while(!isBirthdayOk(BirthDay)){
                 System.out.println("Incorrect birthday, enter again in this format: yyyyMMdd ");
                 BirthDay = sc.nextLine();

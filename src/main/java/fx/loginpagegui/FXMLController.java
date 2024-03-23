@@ -69,8 +69,6 @@ public class FXMLController {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SingUpInterface.fxml"));
         root = fxmlLoader.load();
 
-        SingUpcontroller singUpcontroller = fxmlLoader.getController();
-        singUpcontroller.storageReceive(storage);
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
